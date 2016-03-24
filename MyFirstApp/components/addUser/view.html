@@ -1,5 +1,15 @@
 <div data-role="view" data-title="add user" data-layout="main" data-model="app.addUser" data-show="app.addUser.onShow" data-after-show="app.addUser.afterShow">
-	<div class="text">
-        
+    <div id="form">
+        <form id="addUserForm" method="post" action="/">
+            <input type="text" id="username" name="username" placeholder="name"/>
+            <input type="text" id="age" name="age" placeholder="age" />
+            <input type="submit" id="envoyer" value="Envoyer" />
+        </form>
+    </div>
+    
+    <div id="user">
+        <div id="img"></div>
+        <div id="name"></div>
+        <div id="userAge"></div>
     </div>
 </div>
