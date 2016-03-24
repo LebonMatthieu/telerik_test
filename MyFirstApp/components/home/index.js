@@ -24,11 +24,24 @@ var datas = [
         age: "N/A"
     }
       ];
+
+
 var dataSource = new kendo.data.DataSource({
     transport: {
         read: function (o) {
             o.success(datas);
         }
+    }
+});
+
+$.ajax({
+    url: "datas.json",
+    dataType: "text",
+    success: function (data) {
+
+        var json = $.parseJSON(data);
+
+        
     }
 });
 

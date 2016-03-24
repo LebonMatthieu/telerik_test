@@ -21,11 +21,5 @@ var addUser = function(){
         });
         $('#username').val('');
         $('#age').val('');
-        
-       $.each( datas, function( key, value ) {
-            $('#img').html('<img src='+datas[0].url +'>');
-          	$('#name').html(datas[key].name);
-          	$('#userAge').html(datas[key].age);
-        });
    	});
 }
